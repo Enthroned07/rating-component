@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color:hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+.rating-container{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1.25rem;
+}
+
+.star-style{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(219, 11%, 30%);
+  border-radius: 50%;
+  border: solid rgb(35, 35, 39) 1px;
+  margin: 1.56rem;
+  padding-top: 0.68rem;
+}
+h2{
+  text-align: left;
+  padding-left: 1.56rem;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4{
+  font-size: x-small;
+  text-align: left;
+  padding-left: 1.56rem;
+  padding-right: 1.25rem;
+  margin-top: 0.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+  word-spacing: 0.18rem;
+}
+
+.ratings .rating {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.63rem;
+  margin: 0.35rem;
+  background-color: hsl(219, 11%, 30%);
+  border-radius: 50%;
+  width: 2.62rem;
+  margin-top: 1.43rem;
+  margin-bottom: 1.43rem;
+  color: hsl(216, 12%, 54%);
+
+}
+
+.rating:hover{
+  background-color: hsl(25, 97%, 53%);
+  
+}
+
+.ratings .rating.selected {
+  background-color: grey;
+  color: hsl(0, 0%, 100%);
+}
+
+#submitRating{
+  width: 85%;
+  height: 2.37rem;
+  border-radius: 1.25rem;
+  margin-left: 1.56rem;
+  margin-right: 1.56rem;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#submitRating:hover{
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(255, 111, 0);
+}
+
+
+#ratingPopup{
+  background-color: hsl(216, 12%, 8%);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: hsl(213, 19%, 18%);
+}
+  
+.modal-content {
+  background-color: hsl(213, 19%, 18%);
+  margin: 15% auto;
+  padding: 1.25rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1.25rem;
+}
+
+.thank-u-logo{
+  width: 48%;
+  margin-top: 1.25rem;
+}
+
+.show-rating{
+  width: 10.3rem;
+  height: 1.56rem;
+  background-color: hsl(219, 11%, 30%);
+  margin-left: 3.43rem;
+  margin-top: 1.43rem;
+  border-radius: 1.43rem;
+  padding-top: 0.18rem;
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-u{
+  font-size: 1.25rem;
+  margin-left: 3.75rem;
+  margin-top: 1.43rem;
+  margin-bottom: 0.81rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h5{
+  text-align: center;
+  margin-left: 0.62rem;
+  padding-left: -3.12rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-small;
+  word-spacing: 0.18rem;
+  color: grey;
+}
+  
+  
